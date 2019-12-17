@@ -1,4 +1,4 @@
-# React Boilerplate
+# React Native Boilerplate
 > Boilerplate used and maintained by Mobix Team and its partners/collaborators.
 
 ## Table of Contents
