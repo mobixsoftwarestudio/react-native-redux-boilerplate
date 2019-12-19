@@ -1,6 +1,14 @@
-express = require('express');
-exec = require('child_process').exec;
+const jsonServer = require('json-server');
+const api = require('./api.json');
 
-exec('json-server --watch --host 127.0.0.1 --delay 3000 ./server/api.json --port 80', function(req, res, next) {
-    console.log(req);
-});
+const server = jsonServer.create();
+const router = jsonServer.router(api);
+const middlewares = jsonServer.defaults();
+
+const port = process.env.PORT || 3000;
+
+server.use(middlewares);
+
+server.use(router);
+
+server.listen(port);
