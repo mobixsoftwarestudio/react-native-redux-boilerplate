@@ -5,7 +5,7 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "json-server --watch --host https://mobix-react-redux.herokuapp.com/ --delay 5000 ./server/api.json",
+    "start": "json-server --watch --host mobix-react-redux.herokuapp.com --delay 5000 ./server/api.json",
     "test": "jest"
   },
   "dependencies": {
