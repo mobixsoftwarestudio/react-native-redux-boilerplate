@@ -1,10 +1,10 @@
 {
-	"name": "json-server heroku",
+	"name": "JSONServerMockup",
 	"version": "0.0.1",
 	"dependencies": {
-			"json-server": "^0.15.1"
+		"json-server": "^0.15.1"
 	},
 	"scripts": {
-			"start": "json-server --watch --delay 5000 ./server/api.json",
+		"start": "json-server --watch --delay 5000 ./server/api.json"
 	}
 }
