@@ -12,39 +12,7 @@ This library creates a mock API where you insert your JSON data with no need of 
 
 To run json server:
 
-Inside the `server` folder, we have the `api.json` file and also the `json-server` file. The first one is your "database" with all mock JSON responses, while the other one sets up any configuration that you might need. For more information around configuration, click [here](https://github.com/typicode/json-server "Json-Server Github Page").
-
-Our `api.json`: 
-```
-{
-    "posts": [
-        { "id": 1, "title": "json-server-1", "author": "typicode" },
-        { "id": 2, "title": "json-server-2", "author": "typicode" },
-        { "id": 3, "title": "json-server-3", "author": "typicode" },
-        { "id": 4, "title": "json-server-4", "author": "typicode" }
-    ],
-    "comments": [
-        { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { 
-        "name": "typicode" 
-    }
-}
-```
-
-Our configuration file `json-server.json`: 
-
-```
-{ 
-    "port": 3000
-}
-```
-
-To execute on the project:
-
-`json-server --watch --delay 5000 ./src/server/api.json`
-
-**NOTE**: `--delay 5000` is used to track loading behaviour.
+Locally, type `npm start` and check `http://localhost:3000`
 
 You should see something like this: 
 
@@ -65,6 +33,33 @@ http://localhost:3000
 Type s + enter at any time to create a snapshot of the database
 Watching...
 ```
+
+For more information around json-server configuration, click [here](https://github.com/typicode/json-server "Json-Server Github Page").
+
+Our `api.json`: 
+```
+{
+    "posts": [
+        { "id": 1, "title": "json-server-1", "author": "typicode" },
+        { "id": 2, "title": "json-server-2", "author": "typicode" },
+        { "id": 3, "title": "json-server-3", "author": "typicode" },
+        { "id": 4, "title": "json-server-4", "author": "typicode" }
+    ],
+    "comments": [
+        { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { 
+        "name": "typicode" 
+    }
+}
+```
+
+This project has integration to Heroku, thus everytime there's a PR approved into `master` branch, it will automatically deploy an instance of json-server.
+
+In case you'll use it as reference, set up a Heroku app instance and integrate into your new repository. Deploy your version here:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mobixsoftwarestudio/react-native-redux-boilerplate.git)
+
 
 #### Folder Structure
 #### Features

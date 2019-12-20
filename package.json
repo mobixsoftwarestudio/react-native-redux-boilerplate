@@ -1,11 +1,11 @@
 {
   "name": "MXRNBoilerplate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start",
+    "start": "node ./server/deploy.js",
     "test": "jest"
   },
   "dependencies": {
