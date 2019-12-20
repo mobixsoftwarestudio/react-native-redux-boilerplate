@@ -7,6 +7,7 @@
 
 #### JSON SERVER
 > NOTE: Use `npm` to install it.
+> NOTE: If you want to user `npm start` for some other reason, you'll need to review it inside `package.json`.
 
 This library creates a mock API where you insert your JSON data with no need of server instances. At this point, you'll be up to implement your code considering some minimum API integration.
 
