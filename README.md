@@ -15,7 +15,7 @@ To run json server:
 
 Locally, type `npm start` and check `http://localhost:3000`
 
-You should see something like this: 
+You should see something like this:
 
 ```
 \{^_^}/ hi!
@@ -40,18 +40,16 @@ For more information around json-server configuration, click [here](https://gith
 Our `api.json`: 
 ```
 {
-    "posts": [
-        { "id": 1, "title": "json-server-1", "author": "typicode" },
-        { "id": 2, "title": "json-server-2", "author": "typicode" },
-        { "id": 3, "title": "json-server-3", "author": "typicode" },
-        { "id": 4, "title": "json-server-4", "author": "typicode" }
+    "feature1": [
+        { "id": 1, "title": "Some Title", "description": "Some Description" },
+        { "id": 2, "title": "Some Title", "description": "Some Description" },
+        { "id": 3, "title": "Some Title", "description": "Some Description" },
+        { "id": 4, "title": "Some Title", "description": "Some Description" }
     ],
-    "comments": [
-        { "id": 1, "body": "some comment", "postId": 1 }
+    "feature2": [
+        { "id": 1, "title": "Some Title", "description": "Some Description" }
     ],
-    "profile": { 
-        "name": "typicode" 
-    }
+    "feature3": { "id": 1, "title": "Some Title", "description": "Some Description" }
 }
 ```
 
