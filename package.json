@@ -6,7 +6,8 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "node ./server/deploy.js",
-    "test": "jest"
+		"test": "jest",
+		"secure-mode": "jest --watch --verbose=true"
   },
   "dependencies": {
     "axios": "^0.19.0",
@@ -35,7 +36,8 @@
     "metro-react-native-babel-preset": "^0.56.0",
     "prettier": "^1.19.1",
     "react-test-renderer": "16.9.0",
-		"typescript": "^3.7.4"
+    "supertest": "^4.0.2",
+    "typescript": "^3.7.4"
   },
   "jest": {
     "preset": "react-native",
