@@ -64,41 +64,41 @@ In case you'll use it as reference, set up a Heroku app instance and integrate i
 
 ```
 ├──src
-	└── assets
-		└── images
-	└── core
-		└── components
-	└── utils
-		└── requests.ts
-	└── modules
-		└── moduleName
-			└── routes.ts
-			└── components
-			└── screens
-				└── screen
-					└── actions.ts
-					└── constants.ts
-					└── index.tsx
-						├── interface
-						├── jsx
-						└── styles
-					└── reducer.ts
-					└── saga.ts
-	└── services
-		└── interceptors
-			└── request.ts
-			└── response.ts
-		└── api.ts
-	└── store
-		└── index.ts
-		└── redux.ts
-		└── sagas.ts
-	└── styles
-		└── index.ts
-		└── colors.ts
-		└── metrics.ts
-	└── index.tsx
-	└── routes.ts
+|	└── assets
+|	|	└── images
+|	└── core
+|	|	└── components
+|	└── utils
+|	|	└── requests.ts
+|	└── modules
+|	|	└── moduleName
+|	|	|	└── routes.ts
+|	|	|	└── components
+|	|	|	└── screens
+|	|	|	|	└── screen
+|	|	|	|	|	└── actions.ts
+|	|	|	|	|	└── constants.ts
+|	|	|	|	|	└── index.tsx
+|	|	|	|	|	|	├── interface
+|	|	|	|	|	|	├── jsx
+|	|	|	|	|	|	└── styles
+|	|	|	|	|	└── reducer.ts
+|	|	|	|	|	└── saga.ts
+|	└── services
+|	|	└── interceptors
+|	|	|	└── request.ts
+|	|	|	└── response.ts
+|	|	└── api.ts
+|	└── store
+|	|	└── index.ts
+|	|	└── redux.ts
+|	|	└── sagas.ts
+|	└── styles
+|	|	└── index.ts
+|	|	└── colors.ts
+|	|	└── metrics.ts
+|	└── index.tsx
+|	└── routes.ts
 └── .env
 ```
 
@@ -125,3 +125,9 @@ Whenever you are fixing a bug or adding new functionality to React Native, it is
 
 ## Setup
 
+### Reactotron
+You just need to install the app and open.
+
+And see the documentation [here](https://github.com/infinitered/reactotron/blob/master/readme.md)
+
+You can install the lastest release on this [link](https://github.com/infinitered/reactotron/releases)
