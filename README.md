@@ -6,14 +6,14 @@
 ### Setup
 
 #### JSON SERVER
-> NOTE: Use `npm` to install it.
-> NOTE: If you want to user `npm start` for some other reason, you'll need to review it inside `package.json`.
+> NOTE: Use `yarn` to install it.
+> NOTE: If you want to user `yarn start` for some other reason, you'll need to review it inside `package.json`.
 
 This library creates a mock API where you insert your JSON data with no need of server instances. At this point, you'll be up to implement your code considering some minimum API integration.
 
 To run json server:
 
-Locally, type `npm start` and check `http://localhost:3000`
+Locally, type `yarn start` and check `http://localhost:3000`
 
 You should see something like this:
 
@@ -105,13 +105,25 @@ In case you'll use it as reference, set up a Heroku app instance and integrate i
 #### Features
 #### Development Guideline
 
+### Tests
+The simplest way to run the JavaScript test suite is by using the following command at the root of your React Native checkout:
+
+```
+yarn test
+```
+or to check live for any changes and test them later that you can perform:
+```
+yarn run watch-mode
+```
+This will run tests using [Jest](https://jestjs.io/) ![](https://api.iconify.design/logos-jest.svg?height=16)
+
+> NOTE: Tests can be found inside `__test__` directories, colocated next to the files that are being tested.
+
+### Writing tests
+
+Whenever you are fixing a bug or adding new functionality to React Native, it is a good idea to add a test that covers it.
+
 ## Setup
-
-## Folder Structure
-
-## Features
-
-## Development Guideline
 
 ### Reactotron
 You just need to install the app and open.
