@@ -1,11 +1,10 @@
 module.exports = function(api) {
 	api.cache(true);
 
-	const presets = ['@babel/preset-env', '@babel/preset-typescript'];
-	const plugins = ['@babel/plugin-proposal-class-properties'];
+	const presets = ['module:metro-react-native-babel-preset'];
 
 	return {
 		presets,
-		plugins,
+		sourceMaps: true,
 	};
 };
