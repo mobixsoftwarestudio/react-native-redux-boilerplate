@@ -1,40 +1,43 @@
 import { Action } from 'redux';
-import {
-	NavigationParams,
-	NavigationScreenProp,
-	NavigationState,
-} from 'react-navigation';
 
 export type ApiResponse = Record<string, any>;
 
-export interface LoginRedux {
-	readonly data?: AuthRaw;
+export interface AuthRedux {
+	readonly data?: LoginResponse | SignUpResponse;
 	readonly processing?: boolean;
 	readonly isLoggedIn?: boolean;
 	readonly error?: {};
 }
 
-export interface AuthReduxState extends LoginRedux {}
-
 export interface AuthState {
-	auth: AuthReduxState;
+	auth: AuthRedux;
 }
 
-export interface AuthRaw extends ApiResponse {
-	token: string;
+export interface LoginResponse extends ApiResponse {
+	token?: string;
 }
 
-export interface LoginScreenProps {
-	navigation: NavigationScreenProp<NavigationState, NavigationParams>;
-}
+export interface LoginScreenProps {}
 
 export interface AuthSaga extends Action {
 	payload: {
-		authData: LoginRaw;
+		authData: LoginParams;
+		signUpData: SignUpParams;
 	};
 }
 
-export interface LoginRaw {
+export interface LoginParams {
 	email: string;
 	password: string;
 }
+
+export interface SignUpParams {
+	email: string;
+	name: string;
+	password: string;
+}
+export interface SignUpResponse extends ApiResponse {
+	message?: string;
+}
+
+export interface SignUpScreenProps {}
