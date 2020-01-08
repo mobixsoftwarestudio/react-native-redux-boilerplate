@@ -1,5 +1,5 @@
 //@ts-nocheck
-const supertest = require('supertest');
+import supertest from 'supertest';
 const request = supertest('http://localhost:3000');
 
 test('The server must be running', () => {

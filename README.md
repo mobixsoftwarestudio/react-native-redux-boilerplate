@@ -131,3 +131,11 @@ You just need to install the app and open.
 And see the documentation [here](https://github.com/infinitered/reactotron/blob/master/readme.md)
 
 You can install the lastest release on this [link](https://github.com/infinitered/reactotron/releases)
+
+### Navigation 
+> IMPORTANT: Now, we are using `react-navigation` v4, as soon as v5 is released, we will need to remove lib `react-navigation-hooks`.
+
+>NOTE OF LIB: react-navigation v5 is already on its way and is a full rewrite (including hooks). This project will not live past v4, and will try to make the migration path from v4 to v5 easy by not introducing any new hook that won't be in v5.
+```
+import { useNavigation, useNavigationParam, ... } from 'react-navigation-hooks';
+```
