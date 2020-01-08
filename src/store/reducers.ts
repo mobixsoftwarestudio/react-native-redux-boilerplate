@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
+import auth from '@modules/Auth/reducer';
 
 const reducers = combineReducers({
-	// Remove this line after you create yours reducers
-	example: () => [],
+	auth,
 });
 
 export default reducers;
