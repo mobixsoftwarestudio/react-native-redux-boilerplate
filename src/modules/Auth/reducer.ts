@@ -7,6 +7,8 @@ import {
 	loginResult,
 	doSignUp,
 	signUpResult,
+	doForgotPassword,
+	forgotPasswordResult,
 } from './actions';
 import { AuthReduxState } from './interfaces';
 
@@ -40,6 +42,16 @@ const appReducer = handleActions(
 			});
 		},
 		[`${signUpResult}`](state, action) {
+			return update(state, { $set: action.payload });
+		},
+		[`${doForgotPassword}`](state) {
+			return update(state, {
+				data: { $set: {} },
+				error: { $set: {} },
+				processing: { $set: true },
+			});
+		},
+		[`${forgotPasswordResult}`](state, action) {
 			return update(state, { $set: action.payload });
 		},
 	},

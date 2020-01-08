@@ -3,7 +3,7 @@ import { Action } from 'redux';
 export type ApiResponse = Record<string, any>;
 
 export interface AuthRedux {
-	readonly data?: LoginResponse | SignUpResponse;
+	readonly data?: LoginResponse | SignUpResponse | ForgotPasswordParams;
 	readonly processing?: boolean;
 	readonly isLoggedIn?: boolean;
 	readonly error?: {};
@@ -23,6 +23,7 @@ export interface AuthSaga extends Action {
 	payload: {
 		authData: LoginParams;
 		signUpData: SignUpParams;
+		forgotPasswordData: ForgotPasswordParams;
 	};
 }
 
@@ -41,3 +42,12 @@ export interface SignUpResponse extends ApiResponse {
 }
 
 export interface SignUpScreenProps {}
+
+export interface ForgotPasswordParams {
+	email: string;
+}
+export interface ForgotPasswordResponse extends ApiResponse {
+	message?: string;
+}
+
+export interface ForgotPasswordScreenProps {}

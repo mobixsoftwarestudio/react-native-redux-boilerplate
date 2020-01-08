@@ -1,13 +1,17 @@
 import { createStackNavigator } from 'react-navigation-stack';
 import LoginScreen from './screens/Login';
 import SignUpScreen from './screens/SignUp';
+import ForgotPasswordScreen from './screens/ForgotPassword';
 
 const RouteConfigs = {
 	Login: {
 		screen: LoginScreen,
 	},
-	Signup: {
+	SignUp: {
 		screen: SignUpScreen,
+	},
+	ForgotPassword: {
+		screen: ForgotPasswordScreen,
 	},
 };
 

@@ -1,6 +1,6 @@
 import { put, takeLatest } from 'redux-saga/effects';
-import { LOGIN, SIGNUP } from './types';
-import { loginResult, signUpResult } from './actions';
+import { LOGIN, SIGNUP, FORGOT_PASSWORD } from './types';
+import { loginResult, signUpResult, forgotPasswordResult } from './actions';
 // import request from '@utils/requests';
 import { AuthSaga } from './interfaces';
 
@@ -37,7 +37,7 @@ export function* authenticate({ payload: authData }: AuthSaga) {
 export function* signUp({ payload: signUpData }: AuthSaga) {
 	try {
 		// const response = yield call(request, {
-		// 	url: '/login',
+		// 	url: '/register',
 		// 	method: 'POST',
 		// 	data: authData,
 		// });
@@ -69,7 +69,43 @@ export function* signUp({ payload: signUpData }: AuthSaga) {
 	}
 }
 
+export function* forgotPassword({ payload: forgotPasswordData }: AuthSaga) {
+	try {
+		// const response = yield call(request, {
+		// 	url: '/forgot_password',
+		// 	method: 'POST',
+		// 	data: authData,
+		// });
+		yield put(
+			forgotPasswordResult({
+				data: forgotPasswordData,
+				error: {},
+				processing: false,
+			}),
+		);
+	} catch (err) {
+		if (err instanceof Error) {
+			yield put(
+				forgotPasswordResult({
+					error: err.stack!,
+					data: {},
+					processing: false,
+				}),
+			);
+		} else {
+			yield put(
+				forgotPasswordResult({
+					error: 'Unexpected error',
+					data: {},
+					processing: false,
+				}),
+			);
+		}
+	}
+}
+
 export default function* authSagas() {
 	yield takeLatest(LOGIN, authenticate);
 	yield takeLatest(SIGNUP, signUp);
+	yield takeLatest(FORGOT_PASSWORD, forgotPassword);
 }
