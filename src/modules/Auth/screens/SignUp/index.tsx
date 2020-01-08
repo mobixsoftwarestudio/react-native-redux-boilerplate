@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
 	SafeAreaView,
 	StyleSheet,
@@ -11,27 +11,29 @@ import {
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import { AuthRedux, AuthState } from '@modules/Auth/interfaces';
 import { useSelector, useDispatch } from 'react-redux';
-import { doLogin } from '@modules/Auth/actions';
+import { doSignUp } from '@modules/Auth/actions';
+import _isEmpty from 'lodash/isEmpty';
 import { useNavigation } from 'react-navigation-hooks';
 
-const LoginScreen = () => {
+const SignUpScreen = () => {
 	const dispatch = useDispatch();
 	const navigation = useNavigation();
 
 	const authState: AuthRedux = useSelector(({ auth }: AuthState) => ({
 		processing: auth.processing,
 		error: auth.error,
-		isLoggedIn: auth.isLoggedIn,
+		data: auth.data,
 	}));
 
-	const handleLogin = () => {
-		dispatch(doLogin({ email: '', password: '' }));
-		navigation.navigate('Main');
+	const signUp = () => {
+		dispatch(doSignUp({ email: '', name: '', password: '' }));
 	};
 
-	const handleSignUp = () => {
-		navigation.navigate('Signup');
-	};
+	useEffect(() => {
+		if (!_isEmpty(authState.data)) {
+			navigation.navigate('Main');
+		}
+	}, [authState.data, navigation]);
 
 	return (
 		<>
@@ -42,9 +44,8 @@ const LoginScreen = () => {
 					style={styles.scrollView}>
 					<View style={styles.body}>
 						<View style={styles.sectionContainer}>
-							<Button onPress={handleLogin} title="Login" />
-							<Button onPress={handleSignUp} title="SignUp" />
-							{authState.isLoggedIn && <Text>Logged!</Text>}
+							<Text> Sign Up Screen!</Text>
+							<Button onPress={signUp} title="Confirm" />
 						</View>
 					</View>
 				</ScrollView>
@@ -69,4 +70,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default LoginScreen;
+export default SignUpScreen;
