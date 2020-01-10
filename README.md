@@ -1,4 +1,5 @@
 # React Native Boilerplate
+
 > Boilerplate used and maintained by Mobix Team and its partners/collaborators.
 
 ## Table of Contents
@@ -6,6 +7,7 @@
 ### Setup
 
 #### JSON SERVER
+
 > NOTE: Use `yarn` to install it.
 > NOTE: If you want to user `yarn start` for some other reason, you'll need to review it inside `package.json`.
 
@@ -35,9 +37,10 @@ Type s + enter at any time to create a snapshot of the database
 Watching...
 ```
 
-For more information around json-server configuration, click [here](https://github.com/typicode/json-server "Json-Server Github Page").
+For more information around json-server configuration, click [here](https://github.com/typicode/json-server 'Json-Server Github Page').
 
-Our `api.json`: 
+Our `api.json`:
+
 ```
 {
     "feature1": [
@@ -59,13 +62,16 @@ In case you'll use it as reference, set up a Heroku app instance and integrate i
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mobixsoftwarestudio/react-native-redux-boilerplate.git)
 
-
 #### Folder Structure
 
 ```
 ├──src
 |	└── assets
 |	|	└── images
+|	└── app
+|	|	└── AppContainer.tsx
+|	|	└── index.tsx
+|	|	└── routes.ts
 |	└── core
 |	|	└── components
 |	└── utils
@@ -75,15 +81,16 @@ In case you'll use it as reference, set up a Heroku app instance and integrate i
 |	|	|	└── routes.ts
 |	|	|	└── components
 |	|	|	└── screens
-|	|	|	|	└── screen
 |	|	|	|	|	└── actions.ts
-|	|	|	|	|	└── constants.ts
-|	|	|	|	|	└── index.tsx
-|	|	|	|	|	|	├── interface
-|	|	|	|	|	|	├── jsx
-|	|	|	|	|	|	└── styles
+|	|	|	|	|	└── types.ts
+|	|	|	|	|	└── interfaces.ts
 |	|	|	|	|	└── reducer.ts
 |	|	|	|	|	└── saga.ts
+|	|	|	|	|	└── routes.ts
+|	|	|	|	└── screen
+|	|	|	|	|	└── index.tsx
+|	|	|	|	|	|	├── jsx
+|	|	|	|	|	|	└── styles
 |	└── services
 |	|	└── interceptors
 |	|	|	└── request.ts
@@ -97,24 +104,27 @@ In case you'll use it as reference, set up a Heroku app instance and integrate i
 |	|	└── index.ts
 |	|	└── colors.ts
 |	|	└── metrics.ts
-|	└── index.tsx
-|	└── routes.ts
 └── .env
 ```
 
 #### Features
+
 #### Development Guideline
 
 ### Tests
+
 The simplest way to run the JavaScript test suite is by using the following command at the root of your React Native checkout:
 
 ```
 yarn test
 ```
+
 or to check live for any changes and test them later that you can perform:
+
 ```
 yarn run watch-mode
 ```
+
 This will run tests using [Jest](https://jestjs.io/) ![](https://api.iconify.design/logos-jest.svg?height=16)
 
 > NOTE: Tests can be found inside `__test__` directories, colocated next to the files that are being tested.
@@ -126,16 +136,19 @@ Whenever you are fixing a bug or adding new functionality to React Native, it is
 ## Setup
 
 ### Reactotron
+
 You just need to install the app and open.
 
 And see the documentation [here](https://github.com/infinitered/reactotron/blob/master/readme.md)
 
 You can install the lastest release on this [link](https://github.com/infinitered/reactotron/releases)
 
-### Navigation 
+### Navigation
+
 > IMPORTANT: Now, we are using `react-navigation` v4, as soon as v5 is released, we will need to remove lib `react-navigation-hooks`.
 
->NOTE OF LIB: react-navigation v5 is already on its way and is a full rewrite (including hooks). This project will not live past v4, and will try to make the migration path from v4 to v5 easy by not introducing any new hook that won't be in v5.
+> NOTE OF LIB: react-navigation v5 is already on its way and is a full rewrite (including hooks). This project will not live past v4, and will try to make the migration path from v4 to v5 easy by not introducing any new hook that won't be in v5.
+
 ```
 import { useNavigation, useNavigationParam, ... } from 'react-navigation-hooks';
 ```
