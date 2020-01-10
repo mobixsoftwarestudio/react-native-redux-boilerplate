@@ -7,6 +7,7 @@ import {
 	SIGNUP_RESULT,
 	FORGOT_PASSWORD,
 	FORGOT_PASSWORD_RESULT,
+	LOGOUT,
 } from './types';
 
 export const processing = createAction(PROCESSING);
@@ -19,3 +20,5 @@ export const signUpResult = createAction(SIGNUP_RESULT);
 
 export const doForgotPassword = createAction(FORGOT_PASSWORD);
 export const forgotPasswordResult = createAction(FORGOT_PASSWORD_RESULT);
+
+export const doLogout = createAction(LOGOUT);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
 	SafeAreaView,
 	StyleSheet,
@@ -13,6 +13,8 @@ import { AuthRedux, AuthState } from '@modules/Auth/interfaces';
 import { useSelector, useDispatch } from 'react-redux';
 import { doLogin } from '@modules/Auth/actions';
 import { useNavigation } from 'react-navigation-hooks';
+import { secureGetTokens } from '@utils/secureToken';
+import _isEmpty from 'lodash/isEmpty';
 
 const LoginScreen = () => {
 	const dispatch = useDispatch();
@@ -26,7 +28,6 @@ const LoginScreen = () => {
 
 	const handleLogin = () => {
 		dispatch(doLogin({ email: '', password: '' }));
-		navigation.navigate('Main');
 	};
 
 	const handleSignUp = () => {
@@ -36,6 +37,15 @@ const LoginScreen = () => {
 	const handleForgotPassword = () => {
 		navigation.navigate('ForgotPassword');
 	};
+
+	useEffect(() => {
+		(async function checkLogged() {
+			const isLogged = await secureGetTokens();
+			if (!_isEmpty(isLogged)) {
+				navigation.navigate('Main');
+			}
+		})();
+	}, [navigation, authState.isLoggedIn]);
 
 	return (
 		<>
