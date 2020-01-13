@@ -194,7 +194,6 @@
 				E5020F6CE7FC6DFC143E213D /* Pods-MXRNBoilerplateTests.debug.xcconfig */,
 				30D9834AE122AC59AE23A270 /* Pods-MXRNBoilerplateTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -308,6 +307,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

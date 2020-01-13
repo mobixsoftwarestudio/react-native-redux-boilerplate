@@ -8,3 +8,5 @@ export const SIGNUP_RESULT = 'app/Auth/SIGNUP_RESULT';
 
 export const FORGOT_PASSWORD = 'app/Auth/FORGOT_PASSWORD';
 export const FORGOT_PASSWORD_RESULT = 'app/Auth/FORGOT_PASSWORD_RESULT';
+
+export const LOGOUT = 'app/Auth/LOGOUT';

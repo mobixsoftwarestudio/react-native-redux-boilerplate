@@ -1,8 +1,9 @@
 import { put, takeLatest } from 'redux-saga/effects';
-import { LOGIN, SIGNUP, FORGOT_PASSWORD } from './types';
+import { LOGIN, SIGNUP, FORGOT_PASSWORD, LOGOUT } from './types';
 import { loginResult, signUpResult, forgotPasswordResult } from './actions';
 // import request from '@utils/requests';
 import { AuthSaga } from './interfaces';
+import { secureSetTokens, secureRemoveTokens } from '@utils/secureToken';
 
 export function* authenticate({ payload: authData }: AuthSaga) {
 	try {
@@ -11,6 +12,7 @@ export function* authenticate({ payload: authData }: AuthSaga) {
 		// 	method: 'POST',
 		// 	data: authData,
 		// });
+		yield secureSetTokens({ expirationDate: 3600, token: '123' });
 		yield put(
 			loginResult({
 				isLoggedIn: true,
@@ -104,8 +106,23 @@ export function* forgotPassword({ payload: forgotPasswordData }: AuthSaga) {
 	}
 }
 
+export function* logout() {
+	try {
+		yield secureRemoveTokens();
+		yield put(
+			loginResult({
+				data: {},
+				isLoggedIn: false,
+			}),
+		);
+	} catch (err) {
+		throw Error('Unexpected error when try to logout');
+	}
+}
+
 export default function* authSagas() {
 	yield takeLatest(LOGIN, authenticate);
 	yield takeLatest(SIGNUP, signUp);
 	yield takeLatest(FORGOT_PASSWORD, forgotPassword);
+	yield takeLatest(LOGOUT, logout);
 }

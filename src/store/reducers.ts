@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 import auth from '@modules/Auth/reducer';
+import { LOGOUT } from '@modules/Auth/types';
 
 const reducers = combineReducers({
 	auth,
@@ -8,7 +9,9 @@ const reducers = combineReducers({
 export default reducers;
 
 export const rootReducer = (state: any, action: any) => {
-	// TODO: Logout to clear redux states
+	if (action.type === LOGOUT) {
+		state = {};
+	}
 	return reducers(state, action);
 };
 
