@@ -27,7 +27,10 @@ module.exports = function(api) {
 			},
 		],
 	];
-	const presets = ['module:metro-react-native-babel-preset'];
+	const presets = [
+		'module:metro-react-native-babel-preset',
+		'module:react-native-dotenv'
+	];
 
 	return {
 		plugins,
