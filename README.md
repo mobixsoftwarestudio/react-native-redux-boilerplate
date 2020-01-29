@@ -56,11 +56,17 @@ Our `api.json`:
 }
 ```
 
+#### Deploy
+
 This project has integration to Heroku, thus everytime there's a PR approved into `master` branch, it will automatically deploy an instance of json-server.
 
 In case you'll use it as reference, set up a Heroku app instance and integrate into your new repository. Deploy your version here:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mobixsoftwarestudio/react-native-redux-boilerplate.git)
+
+Also we have an integration with `Bitrise`, setting up our build to send them through `Appetize.io`.
+
+
 
 #### Folder Structure
 
