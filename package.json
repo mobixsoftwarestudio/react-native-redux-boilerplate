@@ -10,7 +10,18 @@
 		"watch-mode": "jest --watch --verbose=true",
 		"dev-clean": "watchman watch-del-all && rm -rf /tmp/metro-* && react-native start --reset-cache",
 		"dev": "react-native start"
-	},
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "eslint --ext .ts,.tsx,.js,.jsx src/"
+    ]
+  },
 	"dependencies": {
 		"@react-native-community/masked-view": "^0.1.5",
 		"axios": "^0.19.0",
@@ -63,7 +74,9 @@
 		"eslint-plugin-jsx-a11y": "^6.2.3",
 		"eslint-plugin-prettier": "^3.1.2",
 		"eslint-plugin-react": "^7.17.0",
+		"husky": "^4.2.1",
 		"jest": "^24.9.0",
+		"lint-staged": "^10.0.7",
 		"metro-react-native-babel-preset": "^0.58.0",
 		"prettier": "^1.19.1",
 		"react-native-typescript-transformer": "^1.2.13",

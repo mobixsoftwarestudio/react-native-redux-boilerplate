@@ -1,9 +1,4 @@
-// const prettierOptions = require('./prettierrc');
-// console.log(prettierOptions);
-
-// const prettierOptions = JSON.parse(
-//   fs.readFileSync(path.resolve(__dirname, '.prettierrc'), 'utf8'),
-// );
+const prettierOptions = require('./.prettierrc.js');
 
 module.exports = {
 	root: true,
@@ -25,19 +20,7 @@ module.exports = {
 		sourceType: 'module',
 	},
 	rules: {
-		'prettier/prettier': [
-			'error',
-			{
-				bracketSpacing: true,
-				jsxBracketSameLine: true,
-				singleQuote: true,
-				trailingComma: 'all',
-				printWidth: 80,
-				tabWidth: 2,
-				useTabs: true,
-				semi: true,
-			},
-		],
+		'prettier/prettier': [ 'error', prettierOptions ],
 		'react/jsx-closing-bracket-location': 'off',
 		'react/jsx-filename-extension': [
 			'error',
