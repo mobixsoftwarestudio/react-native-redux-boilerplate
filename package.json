@@ -1,15 +1,18 @@
 {
-	"name": "MXRNBoilerplate",
-	"version": "0.0.2",
-	"private": true,
-	"scripts": {
-		"android": "react-native run-android",
-		"ios": "react-native run-ios",
-		"start": "node ./server/deploy.js",
+  "name": "MXRNBoilerplate",
+  "version": "0.0.2",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "node ./server/deploy.js",
 		"test": "jest",
+		"build:ios": "react-native bundle --platform='ios' --minify --assets-dest='./ios' --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false",
+		"build:android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
 		"watch-mode": "jest --watch --verbose=true",
 		"dev-clean": "watchman watch-del-all && rm -rf /tmp/metro-* && react-native start --reset-cache",
-		"dev": "react-native start"
+		"dev": "react-native start",
+		"test:e2e:build:debug:ios": "detox build -c ios.sim.debug && detox test -c ios.sim.debug"
   },
   "husky": {
     "hooks": {
@@ -54,7 +57,10 @@
 		"@babel/runtime": "^7.6.2",
 		"@react-native-community/eslint-config": "^0.0.5",
 		"@types/axios": "^0.14.0",
-		"@types/jest": "^24.0.25",
+		"@types/detox": "^14.5.2",
+    "@types/dotenv": "^8.2.0",
+    "@types/jasmine": "^3.5.3",
+    "@types/jest": "^24.0.25",
 		"@types/lodash": "^4.14.149",
 		"@types/react": "^16.9.17",
 		"@types/react-native": "^0.60.28",
@@ -67,6 +73,7 @@
 		"babel-jest": "^24.9.0",
 		"babel-plugin-module-resolver": "^4.0.0",
 		"babel-plugin-root-import": "^6.4.1",
+		"detox": "^15.2.0",
 		"eslint": "^6.7.2",
 		"eslint-config-airbnb": "^18.0.1",
 		"eslint-config-prettier": "^6.9.0",
@@ -75,6 +82,7 @@
 		"eslint-plugin-prettier": "^3.1.2",
 		"eslint-plugin-react": "^7.17.0",
 		"husky": "^4.2.1",
+		"jasmine": "^3.5.0",
 		"jest": "^24.9.0",
 		"lint-staged": "^10.0.7",
 		"metro-react-native-babel-preset": "^0.58.0",
@@ -87,5 +95,19 @@
 		"supertest": "^4.0.2",
 		"ts-jest": "^24.2.0",
 		"typescript": "^3.7.4"
-	}
+	},
+  "detox": {
+    "test-runner": "jest",
+    "runner-config": "e2e/config.json",
+    "configurations": {
+      "ios.sim.debug": {
+        "binaryPath": "ios/build/MXRNBoilerplate/Build/Products/Debug-iphonesimulator/MXRNBoilerplate.app",
+        "build": "xcodebuild -workspace ios/MXRNBoilerplate.xcworkspace -scheme MXRNBoilerplate -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "device": {
+          "type": "iPhone X"
+        }
+      }
+    }
+  }
 }
