@@ -56,7 +56,8 @@ const LoginScreen = () => {
 					style={styles.scrollView}>
 					<View style={styles.body}>
 						<View style={styles.sectionContainer}>
-							<Button onPress={handleLogin} title="Login" />
+							<Text testID="welcome">Welcome!</Text>
+							<Button testID="login-btn" onPress={handleLogin} title="Login" />
 							<Button onPress={handleSignUp} title="SignUp" />
 							<Button onPress={handleForgotPassword} title="Forgot Password" />
 							{authState.isLoggedIn && <Text>Logged!</Text>}
