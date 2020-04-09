@@ -28,7 +28,7 @@ const App: React.FC = () => {
 	return (
 		<View style={styles.body}>
 			<Text style={styles.title}>{`Main Screen!\nYou're Logged!`}</Text>
-			<Button onPress={handleLogout} title="Logout" />
+			<Button testID="logout-btn" onPress={handleLogout} title="Logout" />
 		</View>
 	);
 };

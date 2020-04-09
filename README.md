@@ -158,3 +158,17 @@ You can install the lastest release on this [link](https://github.com/infinitere
 ```
 import { useNavigation, useNavigationParam, ... } from 'react-navigation-hooks';
 ```
+
+## Detox
+
+To run ios test:
+
+```
+yarn test:e2e:build:debug:ios
+```
+
+You can specify which file you want to test separately:
+
+```
+yarn test:e2e:build:debug:ios ./e2e/__tests__/<FILE>
+```
