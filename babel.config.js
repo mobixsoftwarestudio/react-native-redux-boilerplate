@@ -5,7 +5,7 @@ module.exports = function(api) {
 		[
 			'module-resolver',
 			{
-				root: ['./'],
+				root: ['./src'],
 				extensions: [
 					'.ios.js',
 					'.android.js',
@@ -27,10 +27,7 @@ module.exports = function(api) {
 			},
 		],
 	];
-	const presets = [
-		'module:metro-react-native-babel-preset',
-		'module:react-native-dotenv'
-	];
+	const presets = ['module:metro-react-native-babel-preset'];
 
 	return {
 		plugins,

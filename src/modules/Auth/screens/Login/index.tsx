@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
 	SafeAreaView,
 	StyleSheet,
@@ -12,13 +12,24 @@ import { Colors } from 'react-native/Libraries/NewAppScreen';
 import { AuthRedux, AuthState } from '@modules/Auth/interfaces';
 import { useSelector, useDispatch } from 'react-redux';
 import { doLogin } from '@modules/Auth/actions';
-import { useNavigation } from 'react-navigation-hooks';
-import { secureGetTokens } from '@utils/secureToken';
-import _isEmpty from 'lodash/isEmpty';
+import { StackNavigationProp } from '@react-navigation/stack';
+import { RouteProp } from '@react-navigation/native';
+import { RootStackParamList } from '../../routes';
 
-const LoginScreen = () => {
+type LoginScreenRouteProp = RouteProp<RootStackParamList, 'Login'>;
+
+type LoginScreenNavigationProp = StackNavigationProp<
+	RootStackParamList,
+	'Login'
+>;
+
+type Props = {
+	route: LoginScreenRouteProp;
+	navigation: LoginScreenNavigationProp;
+};
+
+const LoginScreen = ({ navigation }: Props) => {
 	const dispatch = useDispatch();
-	const navigation = useNavigation();
 
 	const authState: AuthRedux = useSelector(({ auth }: AuthState) => ({
 		processing: auth.processing,
@@ -37,15 +48,6 @@ const LoginScreen = () => {
 	const handleForgotPassword = () => {
 		navigation.navigate('ForgotPassword');
 	};
-
-	useEffect(() => {
-		(async function checkLogged() {
-			const isLogged = await secureGetTokens();
-			if (!_isEmpty(isLogged)) {
-				navigation.navigate('Main');
-			}
-		})();
-	}, [navigation, authState.isLoggedIn]);
 
 	return (
 		<>
