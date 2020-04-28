@@ -1,29 +1,16 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { doLogout } from '@modules/Auth/actions';
-import { useNavigation } from 'react-navigation-hooks';
-import { AuthRedux, AuthState } from '@modules/Auth/interfaces';
 
 export interface AppProps {}
 
 const App: React.FC = () => {
 	const dispatch = useDispatch();
-	const navigation = useNavigation();
-
-	const authState: AuthRedux = useSelector(({ auth }: AuthState) => ({
-		isLoggedIn: auth.isLoggedIn,
-	}));
 
 	const handleLogout = () => {
 		dispatch(doLogout());
 	};
-
-	useEffect(() => {
-		if (!authState.isLoggedIn) {
-			navigation.navigate('Login');
-		}
-	}, [authState.isLoggedIn, navigation]);
 
 	return (
 		<View style={styles.body}>

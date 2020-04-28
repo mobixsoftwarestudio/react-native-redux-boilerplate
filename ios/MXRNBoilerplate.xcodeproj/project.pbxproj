@@ -16,13 +16,13 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* MXRNBoilerplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MXRNBoilerplateTests.m */; };
-		5ED8225934E99C2A7C95CBD9 /* libPods-MXRNBoilerplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4CC77AE5783B7F5EA43781 /* libPods-MXRNBoilerplateTests.a */; };
 		7477C8FA0D009EB0010F4841 /* libPods-MXRNBoilerplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0B4CBF40C36D3B78AF6724 /* libPods-MXRNBoilerplate.a */; };
 		BF72D51D168F459314AF6A4C /* libPods-MXRNBoilerplate-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A90AF3E64CE27D2536F65B /* libPods-MXRNBoilerplate-tvOSTests.a */; };
 		E2C2259018CA65071A407CD7 /* libPods-MXRNBoilerplate-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C788F6051B856837AAA107E /* libPods-MXRNBoilerplate-tvOS.a */; };
 		ECB4CB712457A57200D81819 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB4CB702457A57200D81819 /* File.swift */; };
 		ECBC45C023F48C0F00C98227 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
 		ECBC45C223F48CAC00C98227 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = ECBC45C123F48CAC00C98227 /* assets */; };
+		FE0E479DA1672176C40E0E6A /* libPods-MXRNBoilerplate-MXRNBoilerplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C465422F116F8988EF21C0B /* libPods-MXRNBoilerplate-MXRNBoilerplateTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +47,7 @@
 		00E356EE1AD99517003FC87E /* MXRNBoilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MXRNBoilerplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* MXRNBoilerplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXRNBoilerplateTests.m; sourceTree = "<group>"; };
+		0C465422F116F8988EF21C0B /* libPods-MXRNBoilerplate-MXRNBoilerplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MXRNBoilerplate-MXRNBoilerplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* MXRNBoilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MXRNBoilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MXRNBoilerplate/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MXRNBoilerplate/AppDelegate.m; sourceTree = "<group>"; };
@@ -62,7 +63,6 @@
 		6C788F6051B856837AAA107E /* libPods-MXRNBoilerplate-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MXRNBoilerplate-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F52A20D8EE44F60A1445B6 /* Pods-MXRNBoilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXRNBoilerplate.release.xcconfig"; path = "Target Support Files/Pods-MXRNBoilerplate/Pods-MXRNBoilerplate.release.xcconfig"; sourceTree = "<group>"; };
 		7928E42576AF4D31266841BE /* Pods-MXRNBoilerplate-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXRNBoilerplate-tvOS.release.xcconfig"; path = "Target Support Files/Pods-MXRNBoilerplate-tvOS/Pods-MXRNBoilerplate-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		8A4CC77AE5783B7F5EA43781 /* libPods-MXRNBoilerplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MXRNBoilerplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A90AF3E64CE27D2536F65B /* libPods-MXRNBoilerplate-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MXRNBoilerplate-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD473920B3D1169BE62DEF6D /* Pods-MXRNBoilerplate-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXRNBoilerplate-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-MXRNBoilerplate-tvOS/Pods-MXRNBoilerplate-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BE0B4CBF40C36D3B78AF6724 /* libPods-MXRNBoilerplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MXRNBoilerplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ED8225934E99C2A7C95CBD9 /* libPods-MXRNBoilerplateTests.a in Frameworks */,
+				FE0E479DA1672176C40E0E6A /* libPods-MXRNBoilerplate-MXRNBoilerplateTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +154,7 @@
 				BE0B4CBF40C36D3B78AF6724 /* libPods-MXRNBoilerplate.a */,
 				6C788F6051B856837AAA107E /* libPods-MXRNBoilerplate-tvOS.a */,
 				90A90AF3E64CE27D2536F65B /* libPods-MXRNBoilerplate-tvOSTests.a */,
-				8A4CC77AE5783B7F5EA43781 /* libPods-MXRNBoilerplateTests.a */,
+				0C465422F116F8988EF21C0B /* libPods-MXRNBoilerplate-MXRNBoilerplateTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -466,7 +466,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MXRNBoilerplateTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MXRNBoilerplate-MXRNBoilerplateTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -601,7 +601,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5020F6CE7FC6DFC143E213D /* Pods-MXRNBoilerplateTests.debug.xcconfig */;
+			baseConfigurationReference = EDAEBC878C3452247EFE99E3 /* Pods-MXRNBoilerplate-MXRNBoilerplateTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -630,7 +630,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30D9834AE122AC59AE23A270 /* Pods-MXRNBoilerplateTests.release.xcconfig */;
+			baseConfigurationReference = E7B244C00BD5D06337C4A590 /* Pods-MXRNBoilerplate-MXRNBoilerplateTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

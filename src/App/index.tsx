@@ -12,7 +12,7 @@ import React from 'react';
 import { StatusBar } from 'react-native';
 import { enableScreens } from 'react-native-screens';
 import '../config/ReactotronConfig';
-import AppContainer from './routes';
+import AppContainer from './AppContainer';
 import { Provider } from 'react-redux';
 import store from '@store';
 
