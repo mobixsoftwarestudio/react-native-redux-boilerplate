@@ -33,7 +33,7 @@
 				"immutability-helper": "^3.0.1",
 				"json-server": "^0.15.1",
 				"lodash": "^4.17.15",
-				"react": "16.9.0",
+				"react": "16.13.1",
 				"react-native": "0.61.5",
 				"react-native-dotenv": "^0.2.0",
 				"react-native-gesture-handler": "^1.5.3",
