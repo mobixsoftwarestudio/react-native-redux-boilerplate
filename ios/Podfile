@@ -90,7 +90,7 @@ target 'MXRNBoilerplate' do
 
 
   target 'MXRNBoilerplateTests' do
-    inherit! :search_paths
+    inherit! :complete
     # Pods for testing
   end
 
