@@ -141,8 +141,6 @@ Whenever you are fixing a bug or adding new functionality to React Native, it is
 
 ### Reactotron
 
-You just need to install the app and open.
-
 And see the documentation [here](https://github.com/infinitered/reactotron/blob/master/readme.md)
 
 You can install the lastest release on this [link](https://github.com/infinitered/reactotron/releases)
