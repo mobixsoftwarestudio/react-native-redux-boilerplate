@@ -1,15 +1,13 @@
 # React Native Boilerplate
 
-> Boilerplate used and maintained by Mobix Team and its partners/collaborators.
-
-## Table of Contents
+> Boilerplate for React Native Apps maintained by Mobix Team and its partners/collaborators.
 
 ### Setup
 
 #### JSON SERVER
 
-> NOTE: Use `yarn` to install it.
-> NOTE: If you want to user `yarn start` for some other reason, you'll need to review it inside `package.json`.
+> NOTE: Use `yarn` for install.
+> NOTE: If you want to user `yarn start` for some other reason, you'll need to review it inside `package.json`. Otherwise the lib won't work as expected.
 
 This library creates a mock API where you insert your JSON data with no need of server instances. At this point, you'll be up to implement your code considering some minimum API integration.
 
@@ -142,8 +140,6 @@ Whenever you are fixing a bug or adding new functionality to React Native, it is
 ## Setup
 
 ### Reactotron
-
-You just need to install the app and open.
 
 And see the documentation [here](https://github.com/infinitered/reactotron/blob/master/readme.md)
 
