@@ -163,7 +163,7 @@ To run ios test:
 yarn test:e2e:build:debug:ios
 ```
 
-You can specify which file you want to test separately:
+You're also able to specify which file you want to test separately:
 
 ```
 yarn test:e2e:build:debug:ios ./e2e/__tests__/<FILE>
