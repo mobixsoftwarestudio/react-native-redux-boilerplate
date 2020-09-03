@@ -1,6 +1,8 @@
 # React Native Redux Boilerplate
 
-> Boilerplate for React Native Apps maintained by Mobix Team and its partners.
+> Boilerplate for React Native Apps maintained by Mobix Team.
+
+> Feel free to collaborate! :-D
 
 ### Setup
 
