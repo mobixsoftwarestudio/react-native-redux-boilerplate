@@ -155,7 +155,7 @@ import { useNavigation, useNavigationParam, ... } from 'react-navigation-hooks';
 
 ## Detox
 
-To run ios test:
+To run ios tests:
 
 ```
 yarn test:e2e:build:debug:ios
