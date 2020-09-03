@@ -131,7 +131,7 @@ yarn run watch-mode
 
 This will run tests using [Jest](https://jestjs.io/) ![](https://api.iconify.design/logos-jest.svg?height=16)
 
-> NOTE: Tests can be found inside `__test__` directories, colocated next to the files that are being tested.
+> NOTE: Tests can be found inside `__test__` folder. You can find all files that are being tested.
 
 ### Writing tests
 
