@@ -2,8 +2,6 @@
 
 > Boilerplate for React Native Apps maintained by Mobix Team.
 
-> Feel free to collaborate! :-D
-
 ### Setup
 
 #### JSON SERVER
