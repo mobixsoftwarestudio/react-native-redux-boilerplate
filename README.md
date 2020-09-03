@@ -13,9 +13,7 @@
 
 This library creates a mock API where you insert your JSON data with no need of server instances. At this point, you'll be up to implement your code considering some minimum API integration.
 
-To run json server:
-
-Locally, type `yarn start` and check `http://localhost:3000`
+Type `yarn start` and check `http://localhost:3000`
 
 You should see something like this:
 
