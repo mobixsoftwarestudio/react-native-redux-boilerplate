@@ -1,6 +1,6 @@
 # React Native Redux Boilerplate
 
-> Maintained by Mobix Team.
+> Maintained by Mobix Team and its partners.
 
 ### Setup
 
