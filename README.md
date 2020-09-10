@@ -1,6 +1,6 @@
 # React Native Redux Boilerplate
 
-> Compilation of our best practices in coding using React Native.
+> Compilation of our best practices in coding using React Native with Redux
 
 ### Setup
 
