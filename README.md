@@ -1,6 +1,6 @@
 # React Native Redux Boilerplate
 
-> Compilation of our best practices in code used by Mobix Team and its partners.
+> Compilation of our best practices in code maintained by Mobix Team.
 
 ### Setup
 
