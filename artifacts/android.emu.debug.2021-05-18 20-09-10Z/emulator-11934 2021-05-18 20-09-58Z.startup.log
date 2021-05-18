@@ -1,0 +1,178 @@
+--------- beginning of main
+05-18 17:09:15.251 16878 16878 I mxrnboilerplat: Not late-enabling -Xcheck:jni (already on)
+05-18 17:09:15.275 16878 16878 I mxrnboilerplat: Unquickening 12 vdex files!
+05-18 17:09:15.276 16878 16878 W mxrnboilerplat: Unexpected CPU variant for X86 using defaults: x86
+--------- beginning of system
+05-18 17:09:15.311 16878 16878 W ActivityThread: Package uses different ABI(s) than its instrumentation: package[com.mxrnboilerplate]: x86, null instrumentation[com.mxrnboilerplate.test]: null, null
+05-18 17:09:15.312 16878 16878 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+05-18 17:09:15.314 16878 16878 I mxrnboilerplat: The ClassLoaderContext is a special shared library.
+05-18 17:09:15.315 16878 16878 I chatty  : uid=10182(com.mxrnboilerplate) identical 1 line
+05-18 17:09:15.317 16878 16878 I mxrnboilerplat: The ClassLoaderContext is a special shared library.
+05-18 17:09:15.429 16878 16878 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+05-18 17:09:15.429 16878 16878 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+05-18 17:09:15.431 16878 16878 I mxrnboilerplat: The ClassLoaderContext is a special shared library.
+05-18 17:09:15.432 16878 16878 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+05-18 17:09:15.433 16878 16878 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+05-18 17:09:15.434 16878 16878 I mxrnboilerplat: The ClassLoaderContext is a special shared library.
+05-18 17:09:15.438 16878 16878 I chatty  : uid=10182(com.mxrnboilerplate) identical 2 lines
+05-18 17:09:15.440 16878 16878 I mxrnboilerplat: The ClassLoaderContext is a special shared library.
+05-18 17:09:15.559 16878 16878 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+05-18 17:09:15.559 16878 16878 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+05-18 17:09:15.563 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:15.728 16878 16878 I chatty  : uid=10182(com.mxrnboilerplate) identical 1 line
+05-18 17:09:15.728 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:15.862 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:25.693 16878 16878 I chatty  : uid=10182(com.mxrnboilerplate) identical 164 lines
+05-18 17:09:25.694 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:25.806 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:32.766 16878 16878 I chatty  : uid=10182(com.mxrnboilerplate) identical 132 lines
+05-18 17:09:32.767 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:32.903 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:32.904 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:33.083 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:36.073 16878 16878 I chatty  : uid=10182(com.mxrnboilerplate) identical 55 lines
+05-18 17:09:36.192 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: Cannot load class. Make sure it is in your apk. Class name: 'com.facebook.imagepipeline.stetho.BaseFrescoStethoPlugin'. Message: com.facebook.imagepipeline.stetho.BaseFrescoStethoPlugin
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: java.lang.ClassNotFoundException: com.facebook.imagepipeline.stetho.BaseFrescoStethoPlugin
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.Class.classForName(Native Method)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.Class.forName(Class.java:454)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource.createPackageInfo(ClassPathPackageInfoSource.java:93)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource.access$000(ClassPathPackageInfoSource.java:37)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource$1.load(ClassPathPackageInfoSource.java:50)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource$1.load(ClassPathPackageInfoSource.java:47)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.test.SimpleCache.get(SimpleCache.java:32)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource$ClassPathPackageInfo.getSubpackages(ClassPathPackageInfoSource.java:230)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource$ClassPathPackageInfo.addTopLevelClassesTo(ClassPathPackageInfoSource.java:243)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource$ClassPathPackageInfo.getTopLevelClassesRecursive(ClassPathPackageInfoSource.java:237)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource$ClassPathPackageInfo.access$100(ClassPathPackageInfoSource.java:214)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource.getTopLevelClassesRecursive(ClassPathPackageInfoSource.java:77)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.test.suitebuilder.TestGrouping.testCaseClassesInPackage(TestGrouping.java:134)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.test.suitebuilder.TestGrouping.addPackagesRecursive(TestGrouping.java:110)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.test.suitebuilder.TestSuiteBuilder.includePackages(TestSuiteBuilder.java:102)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.test.InstrumentationTestRunner.onCreate(InstrumentationTestRunner.java:377)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6704)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.app.ActivityThread.access$1300(ActivityThread.java:237)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1913)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.os.Looper.loop(Looper.java:223)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.reflect.Method.invoke(Native Method)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: Caused by: java.lang.ClassNotFoundException: com.facebook.imagepipeline.stetho.BaseFrescoStethoPlugin
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.VMClassLoader.findLoadedClass(Native Method)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.ClassLoader.findLoadedClass(ClassLoader.java:738)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:363)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	... 25 more
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: Caused by: java.lang.NoClassDefFoundError: Failed resolution of: Lcom/facebook/stetho/dumpapp/DumperPlugin;
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	... 25 more
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.facebook.stetho.dumpapp.DumperPlugin" on path: DexPathList[[zip file "/system/framework/android.test.runner.jar", zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.base.jar", zip file "/data/app/~~K8FLdx5xH343MX_1J6Wuwg==/com.mxrnboilerplate.test-aw7a8cec7gSKg4qaPxLtwg==/base.apk", zip file "/data/app/~~mSY5NLo9iJ0YSy1nfjcVWg==/com.mxrnboilerplate-34gROb2AoIml3d-1ijBs0Q==/base.apk"],nativeLibraryDirectories=[/data/app/~~K8FLdx5xH343MX_1J6Wuwg==/com.mxrnboilerplate.test-aw7a8cec7gSKg4qaPxLtwg==/lib/x86, /data/app/~~mSY5NLo9iJ0YSy1nfjcVWg==/com.mxrnboilerplate-34gROb2AoIml3d-1ijBs0Q==/lib/x86, /data/app/~~K8FLdx5xH343MX_1J6Wuwg==/com.mxrnboilerplate.test-aw7a8cec7gSKg4qaPxLtwg==/base.apk!/lib/x86, /data/app/~~mSY5NLo9iJ0YSy1nfjcVWg==/com.mxrnboilerplate-34gROb2AoIml3d-1ijBs0Q==/base.apk!/lib/x86, /system/lib, /system_ext/lib]]
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:207)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+05-18 17:09:36.196 16878 16878 W ClassPathPackageInfoSource: 	... 25 more
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: Cannot load class. Make sure it is in your apk. Class name: 'com.facebook.imagepipeline.stetho.FrescoStethoPlugin'. Message: com.facebook.imagepipeline.stetho.FrescoStethoPlugin
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: java.lang.ClassNotFoundException: com.facebook.imagepipeline.stetho.FrescoStethoPlugin
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.Class.classForName(Native Method)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.Class.forName(Class.java:454)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource.createPackageInfo(ClassPathPackageInfoSource.java:93)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource.access$000(ClassPathPackageInfoSource.java:37)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource$1.load(ClassPathPackageInfoSource.java:50)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource$1.load(ClassPathPackageInfoSource.java:47)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.test.SimpleCache.get(SimpleCache.java:32)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource$ClassPathPackageInfo.getSubpackages(ClassPathPackageInfoSource.java:230)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource$ClassPathPackageInfo.addTopLevelClassesTo(ClassPathPackageInfoSource.java:243)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource$ClassPathPackageInfo.getTopLevelClassesRecursive(ClassPathPackageInfoSource.java:237)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource$ClassPathPackageInfo.access$100(ClassPathPackageInfoSource.java:214)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource.getTopLevelClassesRecursive(ClassPathPackageInfoSource.java:77)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.test.suitebuilder.TestGrouping.testCaseClassesInPackage(TestGrouping.java:134)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.test.suitebuilder.TestGrouping.addPackagesRecursive(TestGrouping.java:110)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.test.suitebuilder.TestSuiteBuilder.includePackages(TestSuiteBuilder.java:102)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.test.InstrumentationTestRunner.onCreate(InstrumentationTestRunner.java:377)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6704)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.app.ActivityThread.access$1300(ActivityThread.java:237)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1913)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.os.Looper.loop(Looper.java:223)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.reflect.Method.invoke(Native Method)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: Caused by: java.lang.ClassNotFoundException: com.facebook.imagepipeline.stetho.FrescoStethoPlugin
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.VMClassLoader.findLoadedClass(Native Method)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.ClassLoader.findLoadedClass(ClassLoader.java:738)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:363)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	... 25 more
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: Caused by: java.lang.NoClassDefFoundError: Failed resolution of: Lcom/facebook/stetho/dumpapp/DumperPlugin;
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	... 25 more
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.facebook.stetho.dumpapp.DumperPlugin" on path: DexPathList[[zip file "/system/framework/android.test.runner.jar", zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.base.jar", zip file "/data/app/~~K8FLdx5xH343MX_1J6Wuwg==/com.mxrnboilerplate.test-aw7a8cec7gSKg4qaPxLtwg==/base.apk", zip file "/data/app/~~mSY5NLo9iJ0YSy1nfjcVWg==/com.mxrnboilerplate-34gROb2AoIml3d-1ijBs0Q==/base.apk"],nativeLibraryDirectories=[/data/app/~~K8FLdx5xH343MX_1J6Wuwg==/com.mxrnboilerplate.test-aw7a8cec7gSKg4qaPxLtwg==/lib/x86, /data/app/~~mSY5NLo9iJ0YSy1nfjcVWg==/com.mxrnboilerplate-34gROb2AoIml3d-1ijBs0Q==/lib/x86, /data/app/~~K8FLdx5xH343MX_1J6Wuwg==/com.mxrnboilerplate.test-aw7a8cec7gSKg4qaPxLtwg==/base.apk!/lib/x86, /data/app/~~mSY5NLo9iJ0YSy1nfjcVWg==/com.mxrnboilerplate-34gROb2AoIml3d-1ijBs0Q==/base.apk!/lib/x86, /system/lib, /system_ext/lib]]
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:207)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+05-18 17:09:36.198 16878 16878 W ClassPathPackageInfoSource: 	... 25 more
+05-18 17:09:36.198 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:40.238 16878 16878 I chatty  : uid=10182(com.mxrnboilerplate) identical 61 lines
+05-18 17:09:40.241 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:41.093 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:44.053 16878 16878 I chatty  : uid=10182(com.mxrnboilerplate) identical 42 lines
+05-18 17:09:44.054 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:44.162 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:45.618 16878 16878 I chatty  : uid=10182(com.mxrnboilerplate) identical 28 lines
+05-18 17:09:45.619 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:45.730 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:48.245 16878 16878 I chatty  : uid=10182(com.mxrnboilerplate) identical 48 lines
+05-18 17:09:48.246 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:48.346 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:56.351 16878 16878 I chatty  : uid=10182(com.mxrnboilerplate) identical 149 lines
+05-18 17:09:56.473 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: Cannot load class. Make sure it is in your apk. Class name: 'okhttp3.internal.huc.StreamedRequestBody'. Message: okhttp3.internal.huc.StreamedRequestBody
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: java.lang.ClassNotFoundException: okhttp3.internal.huc.StreamedRequestBody
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.Class.classForName(Native Method)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.Class.forName(Class.java:454)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource.createPackageInfo(ClassPathPackageInfoSource.java:93)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource.access$000(ClassPathPackageInfoSource.java:37)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource$1.load(ClassPathPackageInfoSource.java:50)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource$1.load(ClassPathPackageInfoSource.java:47)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.test.SimpleCache.get(SimpleCache.java:32)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource$ClassPathPackageInfo.getSubpackages(ClassPathPackageInfoSource.java:230)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource$ClassPathPackageInfo.addTopLevelClassesTo(ClassPathPackageInfoSource.java:243)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource$ClassPathPackageInfo.getTopLevelClassesRecursive(ClassPathPackageInfoSource.java:237)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource$ClassPathPackageInfo.access$100(ClassPathPackageInfoSource.java:214)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.test.ClassPathPackageInfoSource.getTopLevelClassesRecursive(ClassPathPackageInfoSource.java:77)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.test.suitebuilder.TestGrouping.testCaseClassesInPackage(TestGrouping.java:134)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.test.suitebuilder.TestGrouping.addPackagesRecursive(TestGrouping.java:110)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.test.suitebuilder.TestSuiteBuilder.includePackages(TestSuiteBuilder.java:102)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.test.InstrumentationTestRunner.onCreate(InstrumentationTestRunner.java:377)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6704)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.app.ActivityThread.access$1300(ActivityThread.java:237)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1913)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.os.Looper.loop(Looper.java:223)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.reflect.Method.invoke(Native Method)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: Caused by: java.lang.ClassNotFoundException: okhttp3.internal.huc.StreamedRequestBody
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.VMClassLoader.findLoadedClass(Native Method)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.ClassLoader.findLoadedClass(ClassLoader.java:738)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:363)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	... 25 more
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: Caused by: java.lang.NoClassDefFoundError: Failed resolution of: Lokhttp3/internal/http/UnrepeatableRequestBody;
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	... 25 more
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: Caused by: java.lang.ClassNotFoundException: Didn't find class "okhttp3.internal.http.UnrepeatableRequestBody" on path: DexPathList[[zip file "/system/framework/android.test.runner.jar", zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.base.jar", zip file "/data/app/~~K8FLdx5xH343MX_1J6Wuwg==/com.mxrnboilerplate.test-aw7a8cec7gSKg4qaPxLtwg==/base.apk", zip file "/data/app/~~mSY5NLo9iJ0YSy1nfjcVWg==/com.mxrnboilerplate-34gROb2AoIml3d-1ijBs0Q==/base.apk"],nativeLibraryDirectories=[/data/app/~~K8FLdx5xH343MX_1J6Wuwg==/com.mxrnboilerplate.test-aw7a8cec7gSKg4qaPxLtwg==/lib/x86, /data/app/~~mSY5NLo9iJ0YSy1nfjcVWg==/com.mxrnboilerplate-34gROb2AoIml3d-1ijBs0Q==/lib/x86, /data/app/~~K8FLdx5xH343MX_1J6Wuwg==/com.mxrnboilerplate.test-aw7a8cec7gSKg4qaPxLtwg==/base.apk!/lib/x86, /data/app/~~mSY5NLo9iJ0YSy1nfjcVWg==/com.mxrnboilerplate-34gROb2AoIml3d-1ijBs0Q==/base.apk!/lib/x86, /system/lib, /system_ext/lib]]
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:207)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+05-18 17:09:56.476 16878 16878 W ClassPathPackageInfoSource: 	... 25 more
+05-18 17:09:56.476 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:57.360 16878 16878 I chatty  : uid=10182(com.mxrnboilerplate) identical 14 lines
+05-18 17:09:57.481 16878 16878 W mxrnboilerplat: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+05-18 17:09:57.507 16878 16878 W TestGrouping: Invalid Package: '' could not be found or has no tests
+05-18 17:09:57.514 16878 16878 D SoLoader: init start
+05-18 17:09:57.514 16878 16878 D SoLoader: adding system library source: /vendor/lib
+05-18 17:09:57.514 16878 16878 D SoLoader: adding system library source: /system/lib
+05-18 17:09:57.515 16878 16878 D SoLoader: adding application source: com.facebook.soloader.DirectorySoSource[root = /data/app/~~mSY5NLo9iJ0YSy1nfjcVWg==/com.mxrnboilerplate-34gROb2AoIml3d-1ijBs0Q==/lib/x86 flags = 0]
+05-18 17:09:57.516 16878 16878 D SoLoader: adding backup source from : com.facebook.soloader.ApkSoSource[root = /data/user/0/com.mxrnboilerplate/lib-main flags = 1]

@@ -1,0 +1,22 @@
+af00aab6c9c409df71f41e2ae65879e6
+
+
+
+
+
+
+
+
+
+'use strict';
+
+var MockNativeMethods = {
+  measure: jest.fn(),
+  measureInWindow: jest.fn(),
+  measureLayout: jest.fn(),
+  setNativeProps: jest.fn(),
+  focus: jest.fn(),
+  blur: jest.fn() };
+
+
+module.exports = MockNativeMethods;

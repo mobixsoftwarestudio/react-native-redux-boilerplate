@@ -13,8 +13,8 @@ const sagaMiddleware = createSagaMiddleware({ sagaMonitor });
 middlewares.push(sagaMiddleware);
 
 const composer = __DEV__
-	? compose(applyMiddleware(...middlewares), Reactotron.createEnhancer())
-	: compose(applyMiddleware(...middlewares));
+  ? compose(applyMiddleware(...middlewares), Reactotron.createEnhancer())
+  : compose(applyMiddleware(...middlewares));
 
 const store = createStore(reducers, composer);
 

@@ -1,0 +1,358 @@
+185789d8102dde4ccd6d21c09e933238
+
+
+
+
+
+
+
+
+
+'use strict';function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}function _inherits(subClass, superClass) {if (typeof superClass !== "function" && superClass !== null) {throw new TypeError("Super expression must either be null or a function");}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } });if (superClass) _setPrototypeOf(subClass, superClass);}function _setPrototypeOf(o, p) {_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {o.__proto__ = p;return o;};return _setPrototypeOf(o, p);}function _createSuper(Derived) {return function () {var Super = _getPrototypeOf(Derived),result;if (_isNativeReflectConstruct()) {var NewTarget = _getPrototypeOf(this).constructor;result = Reflect.construct(Super, arguments, NewTarget);} else {result = Super.apply(this, arguments);}return _possibleConstructorReturn(this, result);};}function _possibleConstructorReturn(self, call) {if (call && (typeof call === "object" || typeof call === "function")) {return call;}return _assertThisInitialized(self);}function _assertThisInitialized(self) {if (self === void 0) {throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return self;}function _isNativeReflectConstruct() {if (typeof Reflect === "undefined" || !Reflect.construct) return false;if (Reflect.construct.sham) return false;if (typeof Proxy === "function") return true;try {Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));return true;} catch (e) {return false;}}function _getPrototypeOf(o) {_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {return o.__proto__ || Object.getPrototypeOf(o);};return _getPrototypeOf(o);}function _extends() {_extends = Object.assign || function (target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i];for (var key in source) {if (Object.prototype.hasOwnProperty.call(source, key)) {target[key] = source[key];}}}return target;};return _extends.apply(this, arguments);}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
+
+var MockNativeMethods = jest.requireActual('./MockNativeMethods');
+var mockComponent = jest.requireActual('./mockComponent');
+
+jest.requireActual('../Libraries/polyfills/Object.es7.js');
+jest.requireActual('../Libraries/polyfills/error-guard');
+
+global.__DEV__ = true;
+
+global.Promise = jest.requireActual('promise');
+global.regeneratorRuntime = jest.requireActual('regenerator-runtime/runtime');
+
+global.requestAnimationFrame = function (callback) {
+  return setTimeout(callback, 0);
+};
+global.cancelAnimationFrame = function (id) {
+  clearTimeout(id);
+};
+
+
+jest.setMock("../Libraries/vendor/core/ErrorUtils",
+
+require("../Libraries/vendor/core/ErrorUtils"));
+
+
+jest.
+mock("../Libraries/Core/InitializeCore", function () {}).
+mock('../Libraries/ReactNative/UIManager', function () {return {
+    AndroidViewPager: {
+      Commands: {
+        setPage: jest.fn(),
+        setPageWithoutAnimation: jest.fn() } },
+
+
+    blur: jest.fn(),
+    createView: jest.fn(),
+    customBubblingEventTypes: {},
+    customDirectEventTypes: {},
+    dispatchViewManagerCommand: jest.fn(),
+    focus: jest.fn(),
+    getViewManagerConfig: jest.fn(function (name) {
+      if (name === 'AndroidDrawerLayout') {
+        return {
+          Constants: {
+            DrawerPosition: {
+              Left: 10 } } };
+
+
+
+      }
+    }),
+    measure: jest.fn(),
+    manageChildren: jest.fn(),
+    removeSubviewsFromContainerWithID: jest.fn(),
+    replaceExistingNonRootView: jest.fn(),
+    setChildren: jest.fn(),
+    updateView: jest.fn(),
+    AndroidDrawerLayout: {
+      Constants: {
+        DrawerPosition: {
+          Left: 10 } } },
+
+
+
+    AndroidTextInput: {
+      Commands: {} },
+
+    ScrollView: {
+      Constants: {} },
+
+    View: {
+      Constants: {} } };}).
+
+
+mock('../Libraries/Image/Image', function () {return (
+    mockComponent('../Libraries/Image/Image'));}).
+
+mock('../Libraries/Text/Text', function () {return (
+    mockComponent('../Libraries/Text/Text', MockNativeMethods));}).
+
+mock('../Libraries/Components/TextInput/TextInput', function () {return (
+    mockComponent('../Libraries/Components/TextInput/TextInput', _objectSpread({},
+    MockNativeMethods, {
+      isFocused: jest.fn(),
+      clear: jest.fn(),
+      getNativeRef: jest.fn() })));}).
+
+
+mock('../Libraries/Modal/Modal', function () {return (
+    mockComponent('../Libraries/Modal/Modal'));}).
+
+mock('../Libraries/Components/View/View', function () {return (
+    mockComponent('../Libraries/Components/View/View', MockNativeMethods));}).
+
+mock('../Libraries/Components/AccessibilityInfo/AccessibilityInfo', function () {return {
+    addEventListener: jest.fn(),
+    announceForAccessibility: jest.fn(),
+    fetch: jest.fn(),
+    isBoldTextEnabled: jest.fn(),
+    isGrayscaleEnabled: jest.fn(),
+    isInvertColorsEnabled: jest.fn(),
+    isReduceMotionEnabled: jest.fn(),
+    isReduceTransparencyEnabled: jest.fn(),
+    isScreenReaderEnabled: jest.fn(),
+    removeEventListener: jest.fn(),
+    setAccessibilityFocus: jest.fn() };}).
+
+mock('../Libraries/Components/RefreshControl/RefreshControl', function () {return (
+    jest.requireActual(
+    '../Libraries/Components/RefreshControl/__mocks__/RefreshControlMock'));}).
+
+
+mock('../Libraries/Components/ScrollView/ScrollView', function () {return (
+    jest.requireActual(
+    '../Libraries/Components/ScrollView/__mocks__/ScrollViewMock'));}).
+
+
+mock('../Libraries/Components/ActivityIndicator/ActivityIndicator', function () {return (
+    mockComponent(
+    '../Libraries/Components/ActivityIndicator/ActivityIndicator'));}).
+
+
+mock('../Libraries/AppState/AppState', function () {return {
+    addEventListener: jest.fn(),
+    removeEventListener: jest.fn() };}).
+
+mock('../Libraries/Linking/Linking', function () {return {
+    openURL: jest.fn(),
+    canOpenURL: jest.fn(function () {return Promise.resolve(true);}),
+    openSettings: jest.fn(),
+    addEventListener: jest.fn(),
+    getInitialURL: jest.fn(function () {return Promise.resolve();}),
+    removeEventListener: jest.fn(),
+    sendIntent: jest.fn() };}).
+
+mock('../Libraries/Renderer/shims/ReactNative', function () {
+  var ReactNative = jest.requireActual(
+  '../Libraries/Renderer/shims/ReactNative');
+
+  var NativeMethodsMixin =
+  ReactNative.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.
+  NativeMethodsMixin;
+
+  _extends(NativeMethodsMixin, MockNativeMethods);
+  _extends(ReactNative.NativeComponent.prototype, MockNativeMethods);
+
+  return ReactNative;
+}).
+
+mock('../Libraries/BatchedBridge/NativeModules', function () {return {
+    AlertManager: {
+      alertWithArgs: jest.fn() },
+
+    AsyncLocalStorage: {
+      multiGet: jest.fn(function (keys, callback) {return (
+          process.nextTick(function () {return callback(null, []);}));}),
+
+      multiSet: jest.fn(function (entries, callback) {return (
+          process.nextTick(function () {return callback(null);}));}),
+
+      multiRemove: jest.fn(function (keys, callback) {return (
+          process.nextTick(function () {return callback(null);}));}),
+
+      multiMerge: jest.fn(function (entries, callback) {return (
+          process.nextTick(function () {return callback(null);}));}),
+
+      clear: jest.fn(function (callback) {return process.nextTick(function () {return callback(null);});}),
+      getAllKeys: jest.fn(function (callback) {return (
+          process.nextTick(function () {return callback(null, []);}));}) },
+
+
+    Clipboard: {
+      getString: jest.fn(function () {return '';}),
+      setString: jest.fn() },
+
+    DeviceInfo: {
+      getConstants: function getConstants() {
+        return {
+          Dimensions: {
+            window: {
+              fontScale: 2,
+              height: 1334,
+              scale: 2,
+              width: 750 },
+
+            screen: {
+              fontScale: 2,
+              height: 1334,
+              scale: 2,
+              width: 750 } } };
+
+
+
+      } },
+
+    ImageLoader: {
+      getSize: jest.fn(function (url) {return Promise.resolve({ width: 320, height: 240 });}),
+      prefetchImage: jest.fn() },
+
+    ImageViewManager: {
+      getSize: jest.fn(function (uri, success) {return (
+          process.nextTick(function () {return success(320, 240);}));}),
+
+      prefetchImage: jest.fn() },
+
+    KeyboardObserver: {
+      addListener: jest.fn(),
+      removeListeners: jest.fn() },
+
+    Networking: {
+      sendRequest: jest.fn(),
+      abortRequest: jest.fn(),
+      addListener: jest.fn(),
+      removeListeners: jest.fn() },
+
+    PlatformConstants: {
+      getConstants: function getConstants() {
+        return {};
+      } },
+
+    PushNotificationManager: {
+      presentLocalNotification: jest.fn(),
+      scheduleLocalNotification: jest.fn(),
+      cancelAllLocalNotifications: jest.fn(),
+      removeAllDeliveredNotifications: jest.fn(),
+      getDeliveredNotifications: jest.fn(function (callback) {return (
+          process.nextTick(function () {return [];}));}),
+
+      removeDeliveredNotifications: jest.fn(),
+      setApplicationIconBadgeNumber: jest.fn(),
+      getApplicationIconBadgeNumber: jest.fn(function (callback) {return (
+          process.nextTick(function () {return callback(0);}));}),
+
+      cancelLocalNotifications: jest.fn(),
+      getScheduledLocalNotifications: jest.fn(function (callback) {return (
+          process.nextTick(function () {return callback();}));}),
+
+      requestPermissions: jest.fn(function () {return (
+          Promise.resolve({ alert: true, badge: true, sound: true }));}),
+
+      abandonPermissions: jest.fn(),
+      checkPermissions: jest.fn(function (callback) {return (
+          process.nextTick(function () {return (
+              callback({ alert: true, badge: true, sound: true }));}));}),
+
+
+      getInitialNotification: jest.fn(function () {return Promise.resolve(null);}),
+      addListener: jest.fn(),
+      removeListeners: jest.fn() },
+
+    SourceCode: {
+      getConstants: function getConstants() {
+        return {
+          scriptURL: null };
+
+      } },
+
+    StatusBarManager: {
+      setColor: jest.fn(),
+      setStyle: jest.fn(),
+      setHidden: jest.fn(),
+      setNetworkActivityIndicatorVisible: jest.fn(),
+      setBackgroundColor: jest.fn(),
+      setTranslucent: jest.fn(),
+      getConstants: function getConstants() {return {
+          HEIGHT: 42 };} },
+
+
+    Timing: {
+      createTimer: jest.fn(),
+      deleteTimer: jest.fn() },
+
+    UIManager: {},
+    BlobModule: {
+      getConstants: function getConstants() {return { BLOB_URI_SCHEME: 'content', BLOB_URI_HOST: null };},
+      addNetworkingHandler: jest.fn(),
+      enableBlobSupport: jest.fn(),
+      disableBlobSupport: jest.fn(),
+      createFromParts: jest.fn(),
+      sendBlob: jest.fn(),
+      release: jest.fn() },
+
+    WebSocketModule: {
+      connect: jest.fn(),
+      send: jest.fn(),
+      sendBinary: jest.fn(),
+      ping: jest.fn(),
+      close: jest.fn(),
+      addListener: jest.fn(),
+      removeListeners: jest.fn() },
+
+    I18nManager: {
+      allowRTL: jest.fn(),
+      forceRTL: jest.fn(),
+      swapLeftAndRightInRTL: jest.fn(),
+      getConstants: function getConstants() {return {
+          isRTL: false,
+          doLeftAndRightSwapInRTL: true };} } };}).
+
+
+
+mock('../Libraries/ReactNative/requireNativeComponent', function () {
+  var React = require('react');
+
+  return function (viewName) {var _temp;
+    var Component = (_temp = function (_React$Component) {_inherits(Component, _React$Component);var _super = _createSuper(Component);function Component() {var _this;_classCallCheck(this, Component);for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {args[_key] = arguments[_key];}_this = _super.call.apply(_super, [this].concat(args));_this.
+
+
+
+
+
+        blur = jest.fn();_this.
+        focus = jest.fn();_this.
+        measure = jest.fn();_this.
+        measureInWindow = jest.fn();_this.
+        measureLayout = jest.fn();_this.
+        setNativeProps = jest.fn();return _this;}_createClass(Component, [{ key: "render", value: function render() {return React.createElement(viewName, this.props, this.props.children);} }]);return Component;}(React.Component), _temp);
+
+
+    if (viewName === 'RCTView') {
+      Component.displayName = 'View';
+    } else {
+      Component.displayName = viewName;
+    }
+
+    return Component;
+  };
+}).
+mock(
+'../Libraries/Utilities/verifyComponentAttributeEquivalence',
+function () {return function () {};}).
+
+mock('../Libraries/Components/View/ViewNativeComponent', function () {
+  var React = require('react');
+  var Component = function (_React$Component2) {_inherits(Component, _React$Component2);var _super2 = _createSuper(Component);function Component() {_classCallCheck(this, Component);return _super2.apply(this, arguments);}_createClass(Component, [{ key: "render", value: function render()
+      {
+        return React.createElement('View', this.props, this.props.children);
+      } }]);return Component;}(React.Component);
+
+
+  Component.displayName = 'View';
+
+  return {
+    __esModule: true,
+    default: Component };
+
+});

@@ -12,21 +12,21 @@ import { AuthRedux, AuthState } from '@modules/Auth/interfaces';
 const Stack = createStackNavigator();
 
 const AppContainer = () => {
-	const authState: AuthRedux = useSelector(({ auth }: AuthState) => ({
-		isLoggedIn: auth.isLoggedIn,
-	}));
+  const authState: AuthRedux = useSelector(({ auth }: AuthState) => ({
+    isLoggedIn: auth.isLoggedIn,
+  }));
 
-	return (
-		<NavigationContainer>
-			<Stack.Navigator>
-				{authState.isLoggedIn ? (
-					<>{MainNavigation()}</>
-				) : (
-					<>{AuthNavigation()}</>
-				)}
-			</Stack.Navigator>
-		</NavigationContainer>
-	);
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        {authState.isLoggedIn ? (
+          <>{MainNavigation()}</>
+        ) : (
+          <>{AuthNavigation()}</>
+        )}
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 };
 
 export default AppContainer;

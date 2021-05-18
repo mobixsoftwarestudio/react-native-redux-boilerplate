@@ -11,4 +11,6 @@ server.use(middlewares);
 
 server.use(router);
 
-server.listen(port, () => { console.log(`Successfully running on port ${port}`) });
+server.listen(port, () => {
+  console.log(`Successfully running on port ${port}`);
+});

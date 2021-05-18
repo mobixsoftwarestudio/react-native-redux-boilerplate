@@ -6,7 +6,7 @@
     "paths": {
       "detox": ["./@types/detox"]
     },
-    "typeRoots": ["./@types", "../node_modules/@types"]
+    "typeRoots": ["./@types", "../node_modules/@types"],
   },
   "include": ["./**/*.ts"],
   "exclude": ["../node_modules"]

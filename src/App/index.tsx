@@ -19,14 +19,14 @@ import store from '@store';
 enableScreens();
 
 const App = () => {
-	return (
-		<>
-			<StatusBar barStyle="dark-content" />
-			<Provider store={store}>
-				<AppContainer />
-			</Provider>
-		</>
-	);
+  return (
+    <>
+      <StatusBar barStyle="dark-content" />
+      <Provider store={store}>
+        <AppContainer />
+      </Provider>
+    </>
+  );
 };
 
 export default App;
