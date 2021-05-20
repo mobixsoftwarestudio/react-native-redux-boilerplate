@@ -1,21 +1,17 @@
-# React Native Boilerplate
+# React Native Redux Boilerplate
 
-> Boilerplate used and maintained by Mobix Team and its partners/collaborators.
-
-## Table of Contents
+> Compilation of our best practices in coding.
 
 ### Setup
 
 #### JSON SERVER
 
-> NOTE: Use `yarn` to install it.
-> NOTE: If you want to user `yarn start` for some other reason, you'll need to review it inside `package.json`.
+> NOTE: Use `yarn` for install.
+> NOTE: If you want to user `yarn start` for some other reason, you'll need to review it inside `package.json`. Otherwise the lib won't work as expected.
 
 This library creates a mock API where you insert your JSON data with no need of server instances. At this point, you'll be up to implement your code considering some minimum API integration.
 
-To run json server:
-
-Locally, type `yarn start` and check `http://localhost:3000`
+Type `yarn start` and check `http://localhost:3000`
 
 You should see something like this:
 
@@ -133,7 +129,7 @@ yarn run watch-mode
 
 This will run tests using [Jest](https://jestjs.io/) ![](https://api.iconify.design/logos-jest.svg?height=16)
 
-> NOTE: Tests can be found inside `__test__` directories, colocated next to the files that are being tested.
+> NOTE: Tests can be found inside `__test__` folder. You can find all files that are being tested.
 
 ### Writing tests
 
@@ -142,8 +138,6 @@ Whenever you are fixing a bug or adding new functionality to React Native, it is
 ## Setup
 
 ### Reactotron
-
-You just need to install the app and open.
 
 And see the documentation [here](https://github.com/infinitered/reactotron/blob/master/readme.md)
 
@@ -161,7 +155,7 @@ import { useNavigation, useNavigationParam, ... } from 'react-navigation-hooks';
 
 ## Detox
 
-To run ios test:
+To run ios tests:
 
 ```
 yarn test:e2e:build:debug:ios
